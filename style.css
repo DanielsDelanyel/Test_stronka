@@ -1,4 +1,9 @@
 /* === Reset i zmienne === */
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
 :root {
   --color-primary: #007bff;
   --color-accent: #17a2b8;
@@ -9,106 +14,48 @@
 }
 
 body {
-margin: 0;
-padding: 0;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background-color: #f4f7f6;
-color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: var(--color-text);
+}
+.player-card{
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 3px solid var(--color-primary);
+}
+.card-header{
+  padding: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--color-accent);
+  text-align: center;
 }
 
-body, html {
+.card-section{
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color-border);
+  border-radius:10px;
+}
+.card-footer{
+  padding: 10px;
+  margin-top: 10px;
+  border-top: 2px solid var(--color-accent);
+  text-align: center;
+  font-size: 12px;
+}
+.highlight {
+  color: var(--color-highlight);
+  font-weight: bold;
+}
+.bio{
+  border-left: 4px solid rgb(22, 182, 35);
+}
+.achievements{
+  border-left: 4px solid rgb(219, 198, 10);
+}
 
-        }
 
-        /* Układ z wykorzystaniem CSS Grid */
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            grid-template-rows: auto auto 1fr auto;
-            grid-template-areas: 
-                "header header"
-                "nav nav"
-                "main aside"
-                "footer footer";
-            min-height: 100vh;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        /* Sekcje nagłówka i nawigacji */
-        header {
-            grid-area: header;
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            grid-area: nav;
-            background-color: #34495e;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #ecf0f1;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Główna zawartość */
-        main {
-            grid-area: main;
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        article {
-            background-color: #f9f9f9;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-left: 5px solid #3498db;
-        }
-
-        /* Pasek boczny (Sidebar) */
-        aside {
-            grid-area: aside;
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-left: 1px solid #ddd;
-        }
-
-        /* Stopka */
-        footer {
-            grid-area: footer;
-            background-color: #2c3e50;
-            color: #bdc3c7;
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
-        }
-
-        /* Responsywność dla mniejszych ekranów (Mobile) */
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr;
-                grid-template-areas: 
-                    "header"
-                    "nav"
-                    "main"
-                    "aside"
-                    "footer";
-            }
-        }
 /* TODO: stylowanie karty gracza */
