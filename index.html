@@ -8,7 +8,60 @@
 </head>
 <body>
   <main class="player-card">
-    <!-- TODO: dodaj sekcje karty gracza -->
+    <div class="container">
+        <!-- Nagłówek strony -->
+        <header>
+            <h1>Moja Nowoczesna Strona</h1>
+            <p>Wykorzystanie semantycznych tagów HTML5</p>
+        </header>
+
+        <!-- Menu nawigacyjne -->
+        <nav>
+            <a href="#">Strona główna</a>
+            <a href="#">O nas</a>
+            <a href="#">Usługi</a>
+            <a href="#">Kontakt</a>
+        </nav>
+
+        <!-- Główny obszar zawartości -->
+        <main>
+            <section>
+                <h2>Wprowadzenie</h2>
+                <p>To jest główna sekcja strony. Używamy znacznika <code>&lt;main&gt;</code>, aby określić najważniejszą zawartość dokumentu.</p>
+            </section>
+
+            <section>
+                <h2>Najnowsze wpisy</h2>
+                
+                <article>
+                    <h3>Tytuł pierwszego artykułu</h3>
+                    <p>Treść artykułu. Znacznik <code>&lt;article&gt;</code> jest idealny dla samodzielnych, niezależnych treści takich jak posty na blogu czy wiadomości.</p>
+                </article>
+
+                <article>
+                    <h3>Tytuł drugiego artykułu</h3>
+                    <p>Kolejna samodzielna treść. Tagi semantyczne poprawiają pozycjonowanie SEO naszej strony.</p>
+                </article>
+            </section>
+        </main>
+
+        <!-- Pasek boczny -->
+        <aside>
+            <h3>O autorze</h3>
+            <p>Krótka informacja na pasku bocznym. <code>&lt;aside&gt;</code> zawiera treści poboczne, powiązane z główną zawartością, np. reklamy, powiązane linki, bio autora.</p>
+            
+            <h3>Ważne linki</h3>
+            <ul>
+                <li><a href="#">Polityka prywatności</a></li>
+                <li><a href="#">Regulamin</a></li>
+            </ul>
+        </aside>
+
+        <!-- Stopka -->
+        <footer>
+            <p>&copy; 2026 Moja Nowoczesna Strona. Wszelkie prawa zastrzeżone.</p>
+        </footer>
+    </div>
   </main>
 </body>
 </html>
